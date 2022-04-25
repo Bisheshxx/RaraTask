@@ -1,0 +1,11 @@
+overwrite: true
+schema: "https://graphqlzero.almansi.me/api"
+documents: "src/**/*.graphql"
+generates:
+  src/generated/index.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - typescript-react-query
+    config:
+        fetcher: graphql-request
